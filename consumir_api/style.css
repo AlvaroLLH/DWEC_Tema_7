@@ -1,0 +1,71 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+/* Estilo para el H1 */
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Estilo para cada post */
+.post {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+/* Estilo para el H2 de cada post */
+.post h2 {
+    color: aquamarine;
+}
+
+/* Estilo para el p de cada post */
+.post p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Estilo para el botón de cargar comentarios */
+.carga-comentarios {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+/* Estilo para el hover del botón de cargar comentarios */
+.carga-comentarios hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para los comentarios */
+.comentarios {
+    margin-left: 20px;
+    margin-top: 10px;
+    padding-left: 15px;
+    border-left: 2px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+/* Estilo para el p de los comentarios */
+.comentarios p {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+/* Estilo para el strong de los p de los comentarios */
+.comentarios p strong {
+    color: #333;
+}
+
+/* Estilo para los em de los p de los comentarios */
+.comentarios p em {
+    font-size: 12px;
+    color: #888;
+}
