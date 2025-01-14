@@ -28,8 +28,25 @@ fetch('https://jsonplaceholder.typicode.com/posts')
                     if(comentariosContenedor.innerHTML.trim() === '') {
 
                         // Fetch para obtener los comentarios de ese post
-                        
+                        fetch(`https://jsonplaceholder.typicode.com/comments?postId=${postId}`)
+                        .then(response => response.json())
+                        .then(comentarios => {
+                            comentarios.forEach(comentario => {
+                                const comentarioDiv = document.createElement('div');
+                                comentarioDiv.innerHTML = `
+                                <p><strong>${comment.name}</strong></p>
+                                <p>${comment.body}</p>
+                                <p><em>Por: ${comment.email}</em></p>
+                                `;
+                                comentariosContenedor.appendChild(comentarioDiv);
+                            });
+                        })
                     }
                 })
+        })
+
+        // En caso de error en la carga de los posts, mostramos un mensaje
+        .catch(error => {
+            document.body.innerHTML = `<p>Error al cargar los posts.</p>`;
         })
     })
