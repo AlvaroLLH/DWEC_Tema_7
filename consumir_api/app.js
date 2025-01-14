@@ -34,9 +34,9 @@ fetch('https://jsonplaceholder.typicode.com/posts')
                             comentarios.forEach(comentario => {
                                 const comentarioDiv = document.createElement('div');
                                 comentarioDiv.innerHTML = `
-                                <p><strong>${comment.name}</strong></p>
-                                <p>${comment.body}</p>
-                                <p><em>Por: ${comment.email}</em></p>
+                                <p><strong>${comentario.name}</strong></p>
+                                <p>${comentario.body}</p>
+                                <p><em>Por: ${comentario.email}</em></p>
                                 `;
                                 comentariosContenedor.appendChild(comentarioDiv);
                             });
